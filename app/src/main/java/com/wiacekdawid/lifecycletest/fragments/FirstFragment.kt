@@ -48,6 +48,11 @@ class FirstFragment : Fragment(), View.OnClickListener {
         super.onActivityCreated(savedInstanceState)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        Log.i("Lifecycle callback: " + this::class.java.simpleName, "onViewCreated")
+        super.onViewCreated(view, savedInstanceState)
+    }
+
     override fun onStart() {
         Log.i("Lifecycle callback: " + this::class.java.simpleName, "onStart")
         super.onStart()
